@@ -1,0 +1,49 @@
+body {margin:0; font-family:Arial, verdana, sans-serif;}
+input[type="radio"]{width:auto; position:relative; top:2px; left:5px;}
+input.namefield {width:100px; margin-bottom:20px;}
+#draftorder label {float:left; padding:3px; background:#e6e6e6; text-align:center; font-size:18px;}
+h1 {width:100%; position:fixed; top:0; height:40px; line-height:40px; font-size:20px; text-align:center; background:#000; color:#FFF; margin:0; border-bottom:2px solid #FFF; z-index:9;}
+#draftOrder {width:100%; position:fixed; top:42px; background:#000; color:#FFF; border-bottom:2px solid #FFF; z-index:9;}
+.onTheClock {position:fixed; top:60px; color:#FFF; background:#000; padding:10px; width:100%; text-align:center; z-index:9;}
+#draftOrder span {padding:6px 6px; font-size:11px; font-style:italic; color:#FFF;}
+#draftOrder span b {padding-right:3px; font-style:normal; color:#FFF; font-size:14px;}
+#draftOrder span.active {background:red;}
+.onTheClock .now {font-size:16px; color:red;}
+.onTheClock .now b {padding:0 10px;}
+div.savestatus{width:100%; position:fixed; top:40px; text-align:center; background:#7fcd8d; padding:10px 0;color:#000; height:20px;}
+fieldset, #draftRoom {width:480px; margin:95px auto 0 auto; position:relative;}
+#theboard fieldset {width:50%; float:left;}
+#draftRoom {width:90%; overflow:hidden;}
+legend {font-size:20px;}
+textarea {width:90%; height:250px; font-size:22px; line-height:28px; padding-left:10%; padding-top:15px;}
+#liveBoard {width:48%; float:left;}
+#chatroom {width:50%; position:fixed; right:5%; top:95px;}
+#go #chatroom {right:0; width:48%;}
+#chatroom fieldset {margin-top:20px;}
+#go #chatroom fieldset {margin-top:0;}
+#chatroom input {padding:5px; font-size:14px;}
+input#msg {display:inline-block; clear:both; margin:10px 5px 0 0; width:400px;}
+a#goBtn {display:inline-block; background:green; text-align:center; font-weight:bold; color:#FFF; padding:5px 15px; -moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px; cursor:pointer;}
+a#goBtn:hover {background:lightgreen; color:green;}
+#chats {padding:20px; margin-bottom:20px; font-size:12px; line-height:16px; max-height:200px; overflow:auto;}
+.chat {padding:3px 0; border-bottom:1px dotted #ccc;}
+.chat .name {font-style:italic; color:#666;}
+#chat div.savestatus {width:50%;}
+
+@media screen and (max-width:500px) {
+h1 {z-index:9; font-size:13px; height:20px; line-height:20px;}
+#draftOrder {z-index:9; top:22px;}
+#draftOrder span {width:12px; height:15px; float:left; text-indent:-5000em; overflow:hidden; position:relative; display:block; text-align:left; padding:0 4px;}
+#draftOrder span b {text-indent:0; display:block; float:left; position:absolute; width:20px; text-align:center !important; padding:0; font-size:11px; margin:0; left:0;}
+.onTheClock {z-index:9; position:fixed; top:39px;width:100%; font-size:12px; text-align:center; height:20px; line-height:20px; padding:4px 0;}
+.liveBoard {width:40%; float:left;}
+#liveBoard {float:none; width:100%; font-size:11px; line-height:14px;}
+.liveBoard h2 {font-size:13px;}
+#chatroom {position:fixed; right:0; top:60px; width:60%;}
+#chatroom legend {font-size:13px; font-weight:bold;}
+#chatroom fieldset {margin-top:10px; width:100%;}
+#draftRoom {margin-top:60px;}
+#chats {padding:5px 10px 0 2px; font-size:11px; line-height:14px; margin-bottom:5px; max-height:150px; width:90%;}
+input#name, input#msg {width:80%; margin:5px 0; padding:2px; font-size:11px;}
+a#goBtn {font-size:11px; padding:2px 10px;}
+}
